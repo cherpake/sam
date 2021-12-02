@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "1200"
+   version = "1.7">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "281C844F24D8398000329296"
+               BuildableName = "Sam.app"
+               BlueprintName = "Sam"
+               ReferencedContainer = "container:Sam.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES">
+      <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "281C846524D8398100329296"
+               BuildableName = "SamTests.xctest"
+               BlueprintName = "SamTests"
+               ReferencedContainer = "container:Sam.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "281C847024D8398100329296"
+               BuildableName = "SamUITests.xctest"
+               BlueprintName = "SamUITests"
+               ReferencedContainer = "container:Sam.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
+   </TestAction>
+   <LaunchAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
+      allowLocationSimulation = "YES">
+      <PreActions>
+         <ExecutionAction
+            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
+            <ActionContent
+               title = "Run Script"
+               scriptText = "# Type a script or drag a script file from your workspace to insert its path.&#10;if [ &quot;${CONFIGURATION}&quot; = &quot;Debug&quot; ]; then&#10;    cd $PROJECT_DIR&#10;    xcrun agvtool next-version -all&#10;fi&#10;&#10;xcrun simctl boot &quot;${TARGET_DEVICE_IDENTIFIER}&quot;&#10;xcrun simctl status_bar &quot;${TARGET_DEVICE_IDENTIFIER}&quot; clear&#10;xcrun simctl status_bar &quot;${TARGET_DEVICE_IDENTIFIER}&quot; override \&#10;    --time &apos;2020-05-01T09:41:00+0300&apos; \&#10;    --dataNetwork wifi \&#10;    --wifiMode active \&#10;    --wifiBars 3 \&#10;    --batteryState charged \&#10;    --batteryLevel 100 \&#10;    --cellularBars 4&#10;">
+               <EnvironmentBuildable>
+                  <BuildableReference
+                     BuildableIdentifier = "primary"
+                     BlueprintIdentifier = "281C844F24D8398000329296"
+                     BuildableName = "Sam.app"
+                     BlueprintName = "Sam"
+                     ReferencedContainer = "container:Sam.xcodeproj">
+                  </BuildableReference>
+               </EnvironmentBuildable>
+            </ActionContent>
+         </ExecutionAction>
+      </PreActions>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "281C844F24D8398000329296"
+            BuildableName = "Sam.app"
+            BlueprintName = "Sam"
+            ReferencedContainer = "container:Sam.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </LaunchAction>
+   <ProfileAction
+      buildConfiguration = "Release"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "281C844F24D8398000329296"
+            BuildableName = "Sam.app"
+            BlueprintName = "Sam"
+            ReferencedContainer = "container:Sam.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>
