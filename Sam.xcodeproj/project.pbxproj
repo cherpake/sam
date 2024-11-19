@@ -1,0 +1,652 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		282155B92C2595790050F20A /* SKAGView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280C40882B945A9B00FB9E0C /* SKAGView.swift */; };
+		282155BA2C2595790050F20A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282A6C4F29B3B3F4004D53EC /* SettingsView.swift */; };
+		282155BC2C2595790050F20A /* SearchAds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2815A0A829AF6A8F00C36A5D /* SearchAds.swift */; };
+		282155BE2C2595790050F20A /* CountriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288F0AFF29AFE2390025B915 /* CountriesView.swift */; };
+		282155C02C2595790050F20A /* BlackBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A4250029B9CF7400317CBF /* BlackBox.swift */; };
+		282155C42C2595790050F20A /* DatesRangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282A6C4029B085A2004D53EC /* DatesRangeView.swift */; };
+		282155C52C2595790050F20A /* TotalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282A6C4229B090B3004D53EC /* TotalsView.swift */; };
+		282155C62C2595790050F20A /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288F0AF329AFAD8B0025B915 /* StatusView.swift */; };
+		282155C72C2595790050F20A /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2815A0AA29AF80F100C36A5D /* Settings.swift */; };
+		282155C92C2595790050F20A /* MoneyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288F0AFB29AFBA5A0025B915 /* MoneyView.swift */; };
+		282155CC2C2595790050F20A /* TextEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282A6C5129B3BB9D004D53EC /* TextEditView.swift */; };
+		282155CF2C2595790050F20A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282A6C4529B1E347004D53EC /* Extensions.swift */; };
+		282155D12C2595790050F20A /* samApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2815A09929AF69C600C36A5D /* samApp.swift */; };
+		282155D42C2595790050F20A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 282F7BDC2C258FE4005DA56C /* Assets.xcassets */; };
+		282F7BDD2C258FE4005DA56C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 282F7BDC2C258FE4005DA56C /* Assets.xcassets */; };
+		282F7BE62C259082005DA56C /* SKAGView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280C40882B945A9B00FB9E0C /* SKAGView.swift */; };
+		282F7BE72C259082005DA56C /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282A6C4F29B3B3F4004D53EC /* SettingsView.swift */; };
+		282F7BE92C259082005DA56C /* SearchAds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2815A0A829AF6A8F00C36A5D /* SearchAds.swift */; };
+		282F7BEB2C259082005DA56C /* CountriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288F0AFF29AFE2390025B915 /* CountriesView.swift */; };
+		282F7BED2C259082005DA56C /* BlackBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A4250029B9CF7400317CBF /* BlackBox.swift */; };
+		282F7BF12C259082005DA56C /* DatesRangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282A6C4029B085A2004D53EC /* DatesRangeView.swift */; };
+		282F7BF22C259082005DA56C /* TotalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282A6C4229B090B3004D53EC /* TotalsView.swift */; };
+		282F7BF32C259082005DA56C /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288F0AF329AFAD8B0025B915 /* StatusView.swift */; };
+		282F7BF42C259082005DA56C /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2815A0AA29AF80F100C36A5D /* Settings.swift */; };
+		282F7BF62C259082005DA56C /* MoneyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288F0AFB29AFBA5A0025B915 /* MoneyView.swift */; };
+		282F7BF92C259082005DA56C /* TextEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282A6C5129B3BB9D004D53EC /* TextEditView.swift */; };
+		282F7BFC2C259082005DA56C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282A6C4529B1E347004D53EC /* Extensions.swift */; };
+		282F7BFE2C259082005DA56C /* samApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2815A09929AF69C600C36A5D /* samApp.swift */; };
+		285436702CDCB5C500D27A67 /* SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2854366F2CDCB5BF00D27A67 /* SwiftUI.swift */; };
+		285436712CDCB5C500D27A67 /* SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2854366F2CDCB5BF00D27A67 /* SwiftUI.swift */; };
+		28B83F462CD9409700594BCD /* GrandTotalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B83F452CD9408000594BCD /* GrandTotalView.swift */; };
+		28B83F472CD9409700594BCD /* GrandTotalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B83F452CD9408000594BCD /* GrandTotalView.swift */; };
+		28D5B4E02CEC893700A18569 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D5B4DF2CEC892900A18569 /* SettingsView.swift */; };
+		28D5B4E12CEC893700A18569 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D5B4DF2CEC892900A18569 /* SettingsView.swift */; };
+		28E3340E2CC5627F00A3D24B /* UpdateAdGroupByNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E3340D2CC5627F00A3D24B /* UpdateAdGroupByNameView.swift */; };
+		28E3340F2CC5627F00A3D24B /* UpdateAdGroupByNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E3340D2CC5627F00A3D24B /* UpdateAdGroupByNameView.swift */; };
+		28E7B8CC2CD4E31F005B911A /* MainAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E7B8CB2CD4E2F0005B911A /* MainAppView.swift */; };
+		28E7B8CD2CD4E31F005B911A /* MainAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E7B8CB2CD4E2F0005B911A /* MainAppView.swift */; };
+		28E7B8CF2CD4E349005B911A /* MainAppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E7B8CE2CD4E345005B911A /* MainAppModel.swift */; };
+		28E7B8D02CD4E349005B911A /* MainAppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E7B8CE2CD4E345005B911A /* MainAppModel.swift */; };
+		28E7B8D22CD659C3005B911A /* CampaignsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E7B8D12CD659BF005B911A /* CampaignsView.swift */; };
+		28E7B8D32CD659C3005B911A /* CampaignsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E7B8D12CD659BF005B911A /* CampaignsView.swift */; };
+		28E7B8D52CD671F7005B911A /* AdGroupsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E7B8D42CD671F3005B911A /* AdGroupsView.swift */; };
+		28E7B8D62CD671F7005B911A /* AdGroupsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E7B8D42CD671F3005B911A /* AdGroupsView.swift */; };
+		28E7B8D82CD67E87005B911A /* KeywordsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E7B8D72CD67E7C005B911A /* KeywordsView.swift */; };
+		28E7B8D92CD67E87005B911A /* KeywordsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E7B8D72CD67E7C005B911A /* KeywordsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		280C40882B945A9B00FB9E0C /* SKAGView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKAGView.swift; sourceTree = "<group>"; };
+		2815A09929AF69C600C36A5D /* samApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = samApp.swift; sourceTree = "<group>"; };
+		2815A0A829AF6A8F00C36A5D /* SearchAds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAds.swift; sourceTree = "<group>"; };
+		2815A0AA29AF80F100C36A5D /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		282155D82C2595790050F20A /* SearchAds Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SearchAds Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		282A6C4029B085A2004D53EC /* DatesRangeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatesRangeView.swift; sourceTree = "<group>"; };
+		282A6C4229B090B3004D53EC /* TotalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalsView.swift; sourceTree = "<group>"; };
+		282A6C4529B1E347004D53EC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		282A6C4F29B3B3F4004D53EC /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		282A6C5129B3BB9D004D53EC /* TextEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditView.swift; sourceTree = "<group>"; };
+		282F7BD62C258FE3005DA56C /* Sam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		282F7BDC2C258FE4005DA56C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		282F7BDE2C258FE4005DA56C /* Sam.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sam.entitlements; sourceTree = "<group>"; };
+		282F7BE52C258FFD005DA56C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2854366F2CDCB5BF00D27A67 /* SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI.swift; sourceTree = "<group>"; };
+		288F0AF329AFAD8B0025B915 /* StatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusView.swift; sourceTree = "<group>"; };
+		288F0AFB29AFBA5A0025B915 /* MoneyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyView.swift; sourceTree = "<group>"; };
+		288F0AFF29AFE2390025B915 /* CountriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesView.swift; sourceTree = "<group>"; };
+		28A4250029B9CF7400317CBF /* BlackBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackBox.swift; sourceTree = "<group>"; };
+		28B83F452CD9408000594BCD /* GrandTotalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrandTotalView.swift; sourceTree = "<group>"; };
+		28D5B4DF2CEC892900A18569 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		28E3340D2CC5627F00A3D24B /* UpdateAdGroupByNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateAdGroupByNameView.swift; sourceTree = "<group>"; };
+		28E7B8CB2CD4E2F0005B911A /* MainAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppView.swift; sourceTree = "<group>"; };
+		28E7B8CE2CD4E345005B911A /* MainAppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppModel.swift; sourceTree = "<group>"; };
+		28E7B8D12CD659BF005B911A /* CampaignsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaignsView.swift; sourceTree = "<group>"; };
+		28E7B8D42CD671F3005B911A /* AdGroupsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdGroupsView.swift; sourceTree = "<group>"; };
+		28E7B8D72CD67E7C005B911A /* KeywordsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeywordsView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		282155D22C2595790050F20A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		282F7BD32C258FE3005DA56C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2815A08D29AF69C600C36A5D = {
+			isa = PBXGroup;
+			children = (
+				28D3E7CF29B4832900D9A8E2 /* App */,
+				2815A09829AF69C600C36A5D /* Views */,
+				282F7BD72C258FE3005DA56C /* Sam */,
+				2815A09729AF69C600C36A5D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2815A09729AF69C600C36A5D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				282F7BD62C258FE3005DA56C /* Sam.app */,
+				282155D82C2595790050F20A /* SearchAds Manager.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2815A09829AF69C600C36A5D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				28D5B4DF2CEC892900A18569 /* SettingsView.swift */,
+				288F0AFB29AFBA5A0025B915 /* MoneyView.swift */,
+				282A6C4229B090B3004D53EC /* TotalsView.swift */,
+				282A6C5129B3BB9D004D53EC /* TextEditView.swift */,
+				28B83F452CD9408000594BCD /* GrandTotalView.swift */,
+				28E7B8D72CD67E7C005B911A /* KeywordsView.swift */,
+				28E7B8D42CD671F3005B911A /* AdGroupsView.swift */,
+				28E7B8D12CD659BF005B911A /* CampaignsView.swift */,
+				28E7B8CB2CD4E2F0005B911A /* MainAppView.swift */,
+				28E3340D2CC5627F00A3D24B /* UpdateAdGroupByNameView.swift */,
+				280C40882B945A9B00FB9E0C /* SKAGView.swift */,
+				282A6C4F29B3B3F4004D53EC /* SettingsView.swift */,
+				288F0AFF29AFE2390025B915 /* CountriesView.swift */,
+				288F0AF329AFAD8B0025B915 /* StatusView.swift */,
+				282A6C4029B085A2004D53EC /* DatesRangeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		282F7BD72C258FE3005DA56C /* Sam */ = {
+			isa = PBXGroup;
+			children = (
+				282F7BE52C258FFD005DA56C /* Info.plist */,
+				282F7BDC2C258FE4005DA56C /* Assets.xcassets */,
+				282F7BDE2C258FE4005DA56C /* Sam.entitlements */,
+			);
+			path = Sam;
+			sourceTree = "<group>";
+		};
+		28D3E7CF29B4832900D9A8E2 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2815A09929AF69C600C36A5D /* samApp.swift */,
+				2815A0A829AF6A8F00C36A5D /* SearchAds.swift */,
+				282A6C4529B1E347004D53EC /* Extensions.swift */,
+				2815A0AA29AF80F100C36A5D /* Settings.swift */,
+				28A4250029B9CF7400317CBF /* BlackBox.swift */,
+				2854366F2CDCB5BF00D27A67 /* SwiftUI.swift */,
+				28E7B8CE2CD4E345005B911A /* MainAppModel.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		282155B72C2595790050F20A /* Sam Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 282155D52C2595790050F20A /* Build configuration list for PBXNativeTarget "Sam Mac" */;
+			buildPhases = (
+				282155B82C2595790050F20A /* Sources */,
+				282155D22C2595790050F20A /* Frameworks */,
+				282155D32C2595790050F20A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Sam Mac";
+			productName = Sam;
+			productReference = 282155D82C2595790050F20A /* SearchAds Manager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		282F7BD52C258FE3005DA56C /* Sam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 282F7BE22C258FE4005DA56C /* Build configuration list for PBXNativeTarget "Sam" */;
+			buildPhases = (
+				282F7BD22C258FE3005DA56C /* Sources */,
+				282F7BD32C258FE3005DA56C /* Frameworks */,
+				282F7BD42C258FE3005DA56C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sam;
+			productName = Sam;
+			productReference = 282F7BD62C258FE3005DA56C /* Sam.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2815A08E29AF69C600C36A5D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					282F7BD52C258FE3005DA56C = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 2815A09129AF69C600C36A5D /* Build configuration list for PBXProject "Sam" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2815A08D29AF69C600C36A5D;
+			productRefGroup = 2815A09729AF69C600C36A5D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				282F7BD52C258FE3005DA56C /* Sam */,
+				282155B72C2595790050F20A /* Sam Mac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		282155D32C2595790050F20A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				282155D42C2595790050F20A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		282F7BD42C258FE3005DA56C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				282F7BDD2C258FE4005DA56C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		282155B82C2595790050F20A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				282155B92C2595790050F20A /* SKAGView.swift in Sources */,
+				282155BA2C2595790050F20A /* SettingsView.swift in Sources */,
+				28E7B8D32CD659C3005B911A /* CampaignsView.swift in Sources */,
+				282155BC2C2595790050F20A /* SearchAds.swift in Sources */,
+				28E3340F2CC5627F00A3D24B /* UpdateAdGroupByNameView.swift in Sources */,
+				28E7B8D82CD67E87005B911A /* KeywordsView.swift in Sources */,
+				282155BE2C2595790050F20A /* CountriesView.swift in Sources */,
+				282155C02C2595790050F20A /* BlackBox.swift in Sources */,
+				28E7B8D62CD671F7005B911A /* AdGroupsView.swift in Sources */,
+				282155C42C2595790050F20A /* DatesRangeView.swift in Sources */,
+				28E7B8CD2CD4E31F005B911A /* MainAppView.swift in Sources */,
+				282155C52C2595790050F20A /* TotalsView.swift in Sources */,
+				282155C62C2595790050F20A /* StatusView.swift in Sources */,
+				28E7B8CF2CD4E349005B911A /* MainAppModel.swift in Sources */,
+				282155C72C2595790050F20A /* Settings.swift in Sources */,
+				282155C92C2595790050F20A /* MoneyView.swift in Sources */,
+				282155CC2C2595790050F20A /* TextEditView.swift in Sources */,
+				28B83F462CD9409700594BCD /* GrandTotalView.swift in Sources */,
+				282155CF2C2595790050F20A /* Extensions.swift in Sources */,
+				285436702CDCB5C500D27A67 /* SwiftUI.swift in Sources */,
+				282155D12C2595790050F20A /* samApp.swift in Sources */,
+				28D5B4E12CEC893700A18569 /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		282F7BD22C258FE3005DA56C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				282F7BE62C259082005DA56C /* SKAGView.swift in Sources */,
+				282F7BE72C259082005DA56C /* SettingsView.swift in Sources */,
+				28E7B8D22CD659C3005B911A /* CampaignsView.swift in Sources */,
+				282F7BE92C259082005DA56C /* SearchAds.swift in Sources */,
+				28E3340E2CC5627F00A3D24B /* UpdateAdGroupByNameView.swift in Sources */,
+				28E7B8D92CD67E87005B911A /* KeywordsView.swift in Sources */,
+				282F7BEB2C259082005DA56C /* CountriesView.swift in Sources */,
+				282F7BED2C259082005DA56C /* BlackBox.swift in Sources */,
+				28E7B8D52CD671F7005B911A /* AdGroupsView.swift in Sources */,
+				282F7BF12C259082005DA56C /* DatesRangeView.swift in Sources */,
+				28E7B8CC2CD4E31F005B911A /* MainAppView.swift in Sources */,
+				282F7BF22C259082005DA56C /* TotalsView.swift in Sources */,
+				282F7BF32C259082005DA56C /* StatusView.swift in Sources */,
+				28E7B8D02CD4E349005B911A /* MainAppModel.swift in Sources */,
+				282F7BF42C259082005DA56C /* Settings.swift in Sources */,
+				282F7BF62C259082005DA56C /* MoneyView.swift in Sources */,
+				282F7BF92C259082005DA56C /* TextEditView.swift in Sources */,
+				28B83F472CD9409700594BCD /* GrandTotalView.swift in Sources */,
+				282F7BFC2C259082005DA56C /* Extensions.swift in Sources */,
+				285436712CDCB5C500D27A67 /* SwiftUI.swift in Sources */,
+				282F7BFE2C259082005DA56C /* samApp.swift in Sources */,
+				28D5B4E02CEC893700A18569 /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2815A0A229AF69C700C36A5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2815A0A329AF69C700C36A5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		282155D62C2595790050F20A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Sam/Sam.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1124;
+				DEVELOPMENT_TEAM = MCKT7VHXP5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Sam copy-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "SearchAds Manager";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 2024.6;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cherpake.sam;
+				PRODUCT_NAME = "SearchAds Manager";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		282155D72C2595790050F20A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Sam/Sam.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1124;
+				DEVELOPMENT_TEAM = MCKT7VHXP5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Sam copy-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "SearchAds Manager";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 2024.6;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cherpake.sam;
+				PRODUCT_NAME = "SearchAds Manager";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		282F7BE32C258FE4005DA56C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Sam/Sam.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1124;
+				DEVELOPMENT_TEAM = MCKT7VHXP5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Sam/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "SearchAds Manager";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 2024.6;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cherpake.sam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		282F7BE42C258FE4005DA56C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Sam/Sam.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1124;
+				DEVELOPMENT_TEAM = MCKT7VHXP5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Sam/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "SearchAds Manager";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 2024.6;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cherpake.sam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2815A09129AF69C600C36A5D /* Build configuration list for PBXProject "Sam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2815A0A229AF69C700C36A5D /* Debug */,
+				2815A0A329AF69C700C36A5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		282155D52C2595790050F20A /* Build configuration list for PBXNativeTarget "Sam Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				282155D62C2595790050F20A /* Debug */,
+				282155D72C2595790050F20A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		282F7BE22C258FE4005DA56C /* Build configuration list for PBXNativeTarget "Sam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				282F7BE32C258FE4005DA56C /* Debug */,
+				282F7BE42C258FE4005DA56C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2815A08E29AF69C600C36A5D /* Project object */;
+}
