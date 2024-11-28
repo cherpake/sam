@@ -22,65 +22,91 @@ struct SettingsView: View {
         
     var body: some View {
         NavigationStack {
-            VStack(alignment: .leading) {
-                Text("You can find those values in SearchAds portal settings after adding an account with API role")
-                Link("Help", destination: URL(string: "https://developer.apple.com/documentation/apple_search_ads/implementing_oauth_for_the_apple_search_ads_api")!)
-                
-                TextField("Client ID", text: $clientId)
-                TextField("Team ID", text: $teamId)
-                TextField("Key ID", text: $keyId)
-                
-                HStack {
-                    Text("Private Key")
-                    Spacer()
-                    Button {
-                        #if os(iOS)
-                        UIPasteboard.general.string = publicKey
-                        #else
-                        NSPasteboard.general.clearContents()
-                        NSPasteboard.general.setString(publicKey, forType: .string)
-                        #endif
-                    } label: {
-                        Text("Copy")
-                    }
-                    Spacer()
-                    Button {
-                        #if os(iOS)
-                        if let value = UIPasteboard.general.string {
-                            publicKey = value
-                        }
-                        #else
-                        if let value = NSPasteboard.general.string(forType: .string) {
-                            publicKey = value
-                        }
-                        #endif
-                    } label: {
-                        Text("Paste")
-                    }
+            ScrollView {
+                VStack(alignment: .leading) {
+                    Text("You can find those values in SearchAds portal settings after adding an account with API role")
+                        .multilineTextAlignment(.leading)
+                        .lineLimit(nil)
+                    Link("Help", destination: URL(string: "https://developer.apple.com/documentation/apple_search_ads/implementing_oauth_for_the_apple_search_ads_api")!)
                 }
-                TextEditView(text: $privateKey)
-                    .font(.body.monospaced())
-                    .disabled(true)
                 
-                HStack {
-                    Text("Public Key")
-                    Spacer()
-                    Button {
-                        #if os(iOS)
-                        UIPasteboard.general.string = publicKey
-                        #else
-                        NSPasteboard.general.clearContents()
-                        NSPasteboard.general.setString(publicKey, forType: .string)
-                        #endif
-                    } label: {
-                        Text("Copy")
-                    }
+                    Divider()
+                
+                VStack(alignment: .leading) {
+                    TextField("Client ID", text: $clientId)
+                    TextField("Team ID", text: $teamId)
+                    TextField("Key ID", text: $keyId)
                 }
-                TextEditView(text: $publicKey)
-                    .font(.body.monospaced())
-                    .disabled(true)
                 
+                    Divider()
+                    
+                VStack(alignment: .leading) {
+                    HStack {
+                        Text("Private Key")
+                        Spacer()
+                        Button {
+#if os(iOS)
+                            UIPasteboard.general.string = privateKey
+#else
+                            NSPasteboard.general.clearContents()
+                            NSPasteboard.general.setString(privateKey, forType: .string)
+#endif
+                        } label: {
+                            Text("Copy")
+                        }
+                        Button {
+#if os(iOS)
+                            if let value = UIPasteboard.general.string {
+                                privateKey = value
+                            }
+#else
+                            if let value = NSPasteboard.general.string(forType: .string) {
+                                privateKey = value
+                            }
+#endif
+                        } label: {
+                            Text("Paste")
+                        }
+                    }
+                    TextEditView(text: $privateKey)
+                        .font(.body.monospaced())
+                        .disabled(true)
+                }
                 
+                Divider()
+                    
+                VStack(alignment: .leading) {
+                    HStack {
+                        Text("Public Key")
+                        Spacer()
+                        Button {
+#if os(iOS)
+                            UIPasteboard.general.string = publicKey
+#else
+                            NSPasteboard.general.clearContents()
+                            NSPasteboard.general.setString(publicKey, forType: .string)
+#endif
+                        } label: {
+                            Text("Copy")
+                        }
+                        Button {
+#if os(iOS)
+                            if let value = UIPasteboard.general.string {
+                                publicKey = value
+                            }
+#else
+                            if let value = NSPasteboard.general.string(forType: .string) {
+                                publicKey = value
+                            }
+#endif
+                        } label: {
+                            Text("Paste")
+                        }
+                    }
+                    TextEditView(text: $publicKey)
+                        .font(.body.monospaced())
+                        .disabled(true)
+                }
             }
             .onChange(of: clientId) {
                 UserDefaults.standard.clientId = clientId
@@ -92,6 +118,14 @@ struct SettingsView: View {
             }
             .onChange(of: keyId) {
                 UserDefaults.standard.keyId = keyId
+                applySettings()
+            }
+            .onChange(of: privateKey) {
+                UserDefaults.standard.privateKey = privateKey
+                applySettings()
+            }
+            .onChange(of: publicKey) {
+                UserDefaults.standard.publicKey = publicKey
                 applySettings()
             }
             .padding()
