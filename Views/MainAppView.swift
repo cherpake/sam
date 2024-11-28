@@ -153,7 +153,7 @@ struct MainAppView: View {
                         }
                         Divider()
                         Button {
-                            showSettings = true
+                            modalView = .settings
                         } label: {
                             Text("Settings")
                         }
@@ -163,10 +163,13 @@ struct MainAppView: View {
                 }
             }
         }
-        .fullScreenCover(isPresented: $showSettings) {
-            SettingsView()
-                .environmentObject(viewModel)
-        }
+        .sheet(item: $modalView, content: { modal in
+            switch modal {
+            case .settings:
+                SettingsView()
+                    .environmentObject(viewModel)
+            }
+        })
 #endif
     }
 }

@@ -30,7 +30,34 @@ struct SettingsView: View {
                 TextField("Team ID", text: $teamId)
                 TextField("Key ID", text: $keyId)
                 
-                Text("Private Key")
+                HStack {
+                    Text("Private Key")
+                    Spacer()
+                    Button {
+                        #if os(iOS)
+                        UIPasteboard.general.string = publicKey
+                        #else
+                        NSPasteboard.general.clearContents()
+                        NSPasteboard.general.setString(publicKey, forType: .string)
+                        #endif
+                    } label: {
+                        Text("Copy")
+                    }
+                    Spacer()
+                    Button {
+                        #if os(iOS)
+                        if let value = UIPasteboard.general.string {
+                            publicKey = value
+                        }
+                        #else
+                        if let value = NSPasteboard.general.string(forType: .string) {
+                            publicKey = value
+                        }
+                        #endif
+                    } label: {
+                        Text("Paste")
+                    }
+                }
                 TextEditView(text: $privateKey)
                     .font(.body.monospaced())
                     .disabled(true)
@@ -127,7 +154,7 @@ struct SettingsView: View {
             
             viewModel.clientId = clientId
             viewModel.clientSecret = token
-        } catch let error {
+        } catch _ {
             // TODO: show error!
         }
     }
