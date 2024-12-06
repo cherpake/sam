@@ -785,13 +785,14 @@ class SearchAds: ObservableObject {
     
     // DELETE https://api.searchads.apple.com/api/v4/campaigns/{campaignId}/adgroups/{adgroupId}
     func deleteAdGroup(
-        adGroup: AdGroup
+        campaignId: Int64,
+        adGroupId: Int64,
+        orgId: Int64? = UserDefaults.standard.orgId
     ) async throws {
-        guard let id = adGroup.id else { return }
         let _ = try await request(
             method: "DELETE",
-            api: "campaigns/\(adGroup.campaignId)/adgroups/\(id)",
-            orgId: adGroup.orgId,
+            api: "campaigns/\(campaignId)/adgroups/\(adGroupId)",
+            orgId: orgId,
             type: Empty.self)
     }
 

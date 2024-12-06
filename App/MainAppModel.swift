@@ -452,4 +452,32 @@ class MainAppModel: ObservableObject {
         return adGroups
     }
     
+    func delete(adGroups: [AdGroupsViewItem]) async throws {
+        await withTaskGroup(of: Void.self) { tg in
+            adGroups.forEach { group in
+                tg.addTask {
+                    if let id = Int64(group.id) {
+                        try? await SearchAds.instance.deleteAdGroup(campaignId: group.campaignId, adGroupId: id)
+                    }
+                }
+            }
+        }
+        updateReports()
+    }
+    
+    
+    func updateCampaignBudget(campaign: CampaignViewItem, amount: String) async {
+        guard let id = Int64(campaign.id) else { return }
+        let _ = try? await SearchAds.instance.updateCampaign(
+            campaignId: id,
+            update: UpdateCampaignRequest(
+                campaign: CampaignUpdate(
+                    dailyBudgetAmount: Money(
+                        amount: amount,
+                        currency: campaign.currency
+                    )
+                ),
+                clearGeoTargetingOnCountryOrRegionChange: false))
+        try? await updateCampaingsReport()
+    }
 }

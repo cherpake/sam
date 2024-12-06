@@ -197,6 +197,16 @@ struct AdGroupsView: View {
                     Image(systemName: "pause.fill")
                     Text("Pause")
                 }
+                Divider()
+                Button() {
+                    Task {
+                        let adGroups = self.adGroups.filter({ selected.contains($0.id) })
+                        try await viewModel.delete(adGroups: adGroups)
+                    }
+                } label: {
+                    Image(systemName: "trash")
+                    Text("Delete")
+                }
             })
             .onChange(of: sortOrder) {
                 adGroups.sort(using: sortOrder)

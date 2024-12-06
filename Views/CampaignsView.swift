@@ -37,6 +37,7 @@ struct CampaignsView: View {
             return self.rawValue
         }
         case countries
+        case updateBudget
     }
     
     @State private var modalView: CampaignsModal? = nil
@@ -219,6 +220,13 @@ struct CampaignsView: View {
                 }
                 Divider()
                 Button() {
+                    self.modalView = .updateBudget
+                } label: {
+                    Image(systemName: "dollarsign")
+                    Text("Update Budget")
+                }
+                Divider()
+                Button() {
                     guard let id = selected.first else { return }
                     #if os(macOS)
                     let pasteboard = NSPasteboard.general
@@ -267,6 +275,15 @@ struct CampaignsView: View {
                         })
                     }
                     .presentationDetents([.medium, .large])
+                case .updateBudget:
+                    NavigationStack {
+                        updateBudgetView(campaign: campaign)
+                    }
+                    .presentationDetents([.medium, .large])
+                }
+            } else {
+                VStack {
+                    Text("Please select campaign first")
                 }
             }
         })
@@ -280,5 +297,16 @@ struct CampaignsView: View {
         .onChange(of: viewModel.campaingsReportUpdated) {
             loadCampaigns()
         }
+    }
+    
+    // Why this a func and not inside the view?
+    // Cause otherwise SwiftUI captures the values before they are initiated!
+    private func updateBudgetView(campaign: CampaignViewItem) -> some View {
+        let money = Money(amount: "\(campaign.budget)", currency: campaign.currency)
+        return MoneyView(money: money,
+                  title: "Update Budget",
+                  update: { amount, isOn in
+            await viewModel.updateCampaignBudget(campaign: campaign, amount: amount)
+        })
     }
 }
