@@ -37,6 +37,7 @@
 		282F7BFE2C259082005DA56C /* samApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2815A09929AF69C600C36A5D /* samApp.swift */; };
 		285436702CDCB5C500D27A67 /* SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2854366F2CDCB5BF00D27A67 /* SwiftUI.swift */; };
 		285436712CDCB5C500D27A67 /* SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2854366F2CDCB5BF00D27A67 /* SwiftUI.swift */; };
+		28A51FC62D04021A0096CD2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28A51FC42D04021A0096CD2A /* LaunchScreen.storyboard */; };
 		28B83F462CD9409700594BCD /* GrandTotalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B83F452CD9408000594BCD /* GrandTotalView.swift */; };
 		28B83F472CD9409700594BCD /* GrandTotalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B83F452CD9408000594BCD /* GrandTotalView.swift */; };
 		28D5B4E02CEC893700A18569 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D5B4DF2CEC892900A18569 /* SettingsView.swift */; };
@@ -75,6 +76,8 @@
 		288F0AFB29AFBA5A0025B915 /* MoneyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyView.swift; sourceTree = "<group>"; };
 		288F0AFF29AFE2390025B915 /* CountriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesView.swift; sourceTree = "<group>"; };
 		28A4250029B9CF7400317CBF /* BlackBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackBox.swift; sourceTree = "<group>"; };
+		28A51FC42D04021A0096CD2A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		28A51FC72D0402AC0096CD2A /* Info-Mac.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-Mac.plist"; sourceTree = "<group>"; };
 		28B83F452CD9408000594BCD /* GrandTotalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrandTotalView.swift; sourceTree = "<group>"; };
 		28D5B4DF2CEC892900A18569 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		28E3340D2CC5627F00A3D24B /* UpdateAdGroupByNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateAdGroupByNameView.swift; sourceTree = "<group>"; };
@@ -148,8 +151,10 @@
 			isa = PBXGroup;
 			children = (
 				282F7BE52C258FFD005DA56C /* Info.plist */,
+				28A51FC72D0402AC0096CD2A /* Info-Mac.plist */,
 				282F7BDC2C258FE4005DA56C /* Assets.xcassets */,
 				282F7BDE2C258FE4005DA56C /* Sam.entitlements */,
+				28A51FC42D04021A0096CD2A /* LaunchScreen.storyboard */,
 			);
 			path = Sam;
 			sourceTree = "<group>";
@@ -253,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				282F7BDD2C258FE4005DA56C /* Assets.xcassets in Resources */,
+				28A51FC62D04021A0096CD2A /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +376,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Sam/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -425,6 +432,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Sam/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -444,14 +452,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Sam/Sam.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1124;
+				CURRENT_PROJECT_VERSION = 1500;
 				DEVELOPMENT_TEAM = MCKT7VHXP5;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Sam copy-Info.plist";
+				INFOPLIST_FILE = "Sam/Info-Mac.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "SearchAds Manager";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -469,7 +476,6 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 2024.6;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cherpake.sam;
 				PRODUCT_NAME = "SearchAds Manager";
 				SDKROOT = auto;
@@ -489,14 +495,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Sam/Sam.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1124;
+				CURRENT_PROJECT_VERSION = 1500;
 				DEVELOPMENT_TEAM = MCKT7VHXP5;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Sam copy-Info.plist";
+				INFOPLIST_FILE = "Sam/Info-Mac.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "SearchAds Manager";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -514,7 +519,6 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 2024.6;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cherpake.sam;
 				PRODUCT_NAME = "SearchAds Manager";
 				SDKROOT = auto;
@@ -533,13 +537,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Sam/Sam.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1124;
+				CURRENT_PROJECT_VERSION = 1500;
 				DEVELOPMENT_TEAM = MCKT7VHXP5;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Sam/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "SearchAds Manager";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
@@ -558,7 +561,6 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 2024.6;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cherpake.sam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -579,13 +581,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Sam/Sam.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1124;
+				CURRENT_PROJECT_VERSION = 1500;
 				DEVELOPMENT_TEAM = MCKT7VHXP5;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Sam/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "SearchAds Manager";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
@@ -604,7 +605,6 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 2024.6;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cherpake.sam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
