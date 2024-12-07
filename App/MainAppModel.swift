@@ -108,7 +108,7 @@ class MainAppModel: ObservableObject {
     }
     
     #if os(iOS)
-    @Published var path = NavigationPath("campaigns")
+    @Published var path = NavigationPath()
     #endif
     
     @Published var viewMode: ViewMode = UserDefaults.standard.showAllKeywords ? .allKeywords : .normal

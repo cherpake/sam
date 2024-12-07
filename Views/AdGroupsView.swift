@@ -247,7 +247,6 @@ struct AdGroupsView: View {
             loadAdGroups()
             #if os(iOS)
             viewModel.adGroupSelection = Set<AdGroupsViewItem.ID>()
-            viewModel.path = NavigationPath("adgroups")
             #endif
         }
         .onChange(of: viewModel.adGroupsReportUpdate) {

@@ -291,7 +291,6 @@ struct CampaignsView: View {
             loadCampaigns()
             #if os(iOS)
             viewModel.campaignSelection = nil
-            viewModel.path = NavigationPath()
             #endif
         }
         .onChange(of: viewModel.campaingsReportUpdated) {

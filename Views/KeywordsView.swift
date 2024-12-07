@@ -332,6 +332,9 @@ struct KeywordsView: View {
         .onAppear {
             loadKeywords()
         }
+        .onDisappear(perform: {
+            
+        })
         .onChange(of: viewModel.keywordsReportUpdate) {
             loadKeywords()
         }
