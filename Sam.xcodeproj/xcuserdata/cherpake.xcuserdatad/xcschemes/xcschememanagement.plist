@@ -4,11 +4,6 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Sam Mac.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
-		</dict>
 		<key>Sam copy.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
@@ -17,9 +12,14 @@
 		<key>Sam.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>2</integer>
 		</dict>
 		<key>Sam2 copy.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>SamMac.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
@@ -33,6 +33,11 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>2815A09529AF69C600C36A5D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>282155B72C2595790050F20A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
