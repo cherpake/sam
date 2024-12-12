@@ -298,6 +298,21 @@ struct KeywordsView: View {
                         Image(systemName: "doc.on.doc")
                         Text("Copy Keyword Id")
                     }
+                    Button() {
+                        let keywords = keywords.filter({ selected.contains($0.id) })
+                            .compactMap({ $0.name })
+                            .joined(separator: "\n")
+#if os(macOS)
+                        let pasteboard = NSPasteboard.general
+                        pasteboard.declareTypes([.string], owner: nil)
+                        pasteboard.setString(keywords, forType: .string)
+#else
+                        UIPasteboard.general.string = keywords
+#endif
+                    } label: {
+                        Image(systemName: "doc.on.doc")
+                        Text("Copy Keyword")
+                    }
                     Divider()
                 }
                 VStack {
